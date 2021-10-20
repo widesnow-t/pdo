@@ -15,7 +15,7 @@ function connectDb()
             PDO::ERRMODE_EXCEPTION]
         );
     } catch (PDOException $e) {
-        //接続がうまく行かない場合こちらの処理が実行される
+        
         echo $e->getMessage();
         exit;
     }
